@@ -25,19 +25,19 @@ const CurrentWeather = ({ city, coordinates, unit, setWeatherIcon }) => {
 
   if (!weather) return <div>Loading...</div>;
 
-  const temp = unit === 'C' ? weather.current.temp_c : weather.current.temp_f;
+  // const temp = unit === 'C' ? weather.current.temp_c : weather.current.temp_f;
 
   return (
     <div className="current-weather">
       {/* <h2>{weather.location.name}</h2> */}
       {/* <p>{weather.location.localtime}</p> */}
       <div className="weather-details">
-        <div className="weather-icon">
+        {/* <div className="weather-icon">
           <img src={weather.current.condition.icon} alt="Weather Icon" />
-        </div>
+        </div> */}
         <div className="weather-info">
-          <p className="temperature">{temp}°{unit}</p>
-          <p>{weather.current.condition.text}</p>
+          {/* <p className="temperature">{temp}°{unit}</p> */}
+          <p className="weather-condition">{weather.current.condition.text}</p>
           <p>Humidity: {weather.current.humidity}%</p>
           <p>Cloudy: {weather.current.cloud}%</p>
           <p>Wind: {weather.current.wind_kph} kph</p>

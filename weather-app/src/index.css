@@ -239,7 +239,7 @@ input:checked + .slider:before {
   margin: 5px 0;
 }
 
-.weather-info .temperature {
+.weather-info .weather-condition {
   font-size: 48px;
   font-weight: bold;
 }
