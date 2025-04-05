@@ -1,7 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
+/* index.css */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -14,14 +11,15 @@ body {
 .container {
   display: flex;
   height: 100vh;
-  padding: 20px;
 }
 
 .left-panel {
-  flex: 2; /* Increased width */
+  flex: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .search {
@@ -31,21 +29,21 @@ body {
   padding: 10px;
   border-radius: 8px;
   position: relative;
-  background: none; /* Remove background color */
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .search input {
-  padding: 10px 10px 10px 40px; /* Add padding for the icon */
+  padding: 10px 10px 10px 40px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 4px 0 0 4px; /* Rounded corners for the left side */
+  border-radius: 4px 0 0 4px;
   flex: 1;
   outline: none;
   transition: border-color 0.3s;
 }
 
 .search input:focus {
-  border-color: #007bff; /* Change border color on focus */
+  border-color: #007bff;
 }
 
 .search button {
@@ -54,7 +52,7 @@ body {
   background-color: #007bff;
   color: white;
   border: 1px solid #007bff;
-  border-radius: 0 4px 4px 0; /* Rounded corners for the right side */
+  border-radius: 0 4px 4px 0;
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
 }
@@ -98,30 +96,31 @@ body {
 }
 
 .right-panel {
-  flex: 1; /* Decreased width */
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 20px;
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  overflow-y: auto;
 }
 
 .weather-section {
   flex: 1;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   margin-bottom: 20px;
-  overflow-y: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Separator line */
 }
 
 .weather-section h2 {
-  font-size: 48px;
+  font-size: 24px;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .weather-section p {
-  font-size: 24px;
+  font-size: 18px;
   margin: 10px 0;
 }
 
@@ -133,14 +132,6 @@ body {
 .weather-table th, .weather-table td {
   padding: 10px;
   text-align: left;
-}
-
-.weather-table th {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.weather-table td {
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .weather-icon {
@@ -203,43 +194,36 @@ input:checked + .slider:before {
 }
 
 .current-weather {
-  background: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 8px;
   text-align: center;
 }
 
 .current-weather h2 {
-  font-size: 36px;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
-.current-weather p {
-  font-size: 18px;
-  margin: 5px 0;
+.current-weather .weather-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.weather-details {
+.weather-detail-item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-.weather-icon img {
-  width: 100px;
-  height: 100px;
+.weather-detail-item img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
 }
 
-.weather-info {
-  margin-left: 20px;
-}
-
-.weather-info p {
-  font-size: 18px;
-  margin: 5px 0;
-}
-
-.weather-info .weather-condition {
-  font-size: 48px;
-  font-weight: bold;
+.weather-detail-item i {
+  margin-left: 10px;
 }
