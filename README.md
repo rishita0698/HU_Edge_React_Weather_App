@@ -9,11 +9,8 @@ A responsive weather application that provides current weather details, hourly f
 - [Project Description](#project-description)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
+- [Usage](#usage)
 
 ## Project Description
 
@@ -46,6 +43,14 @@ To get started with the project, follow these steps:
     ```bash
     npm install
     ```
+
+##  Technology Used
+
+- React
+- Axios
+- WeatherAPI
+- CSS (for styling)
+- HTML
 
 ## Usage
 
