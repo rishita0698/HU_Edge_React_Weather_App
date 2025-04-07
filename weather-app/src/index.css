@@ -27,7 +27,7 @@ body {
   align-items: center;
   margin-bottom: 20px;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 20px;
   position: relative;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -36,7 +36,7 @@ body {
   padding: 10px 10px 10px 40px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 4px 0 0 4px;
+  border-radius: 10px 0 0 10px;
   flex: 1;
   outline: none;
   transition: border-color 0.3s;
@@ -49,10 +49,10 @@ body {
 .search button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: #00b3ff;
   color: white;
-  border: 1px solid #007bff;
-  border-radius: 0 4px 4px 0;
+  border: 1px solid #00b3ff;
+  border-radius: 0 8px 8px 0;
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
 }
@@ -64,9 +64,9 @@ body {
 
 .search-icon {
   position: absolute;
-  left: 10px;
+  left: 20px;
   font-size: 20px;
-  color: #ccc;
+  color: #cccccc;
 }
 
 .city-info {
